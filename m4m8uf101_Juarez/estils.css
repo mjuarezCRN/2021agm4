@@ -1,0 +1,35 @@
+body{
+  background-color: cyan;
+}
+
+.corazon{
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  transform:rotate(45deg);
+  position: relative;
+  margin: 200px;
+  border-radius: 5px;
+}
+
+.corazon:after{
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  transform: translateX(-75px);
+  position: absolute;
+  content: "";
+  border-radius: 50%
+
+}
+
+.corazon:before{
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  transform: translateY(-75px);
+  position: absolute;
+  content: "";
+  border-radius: 50%
+
+}
