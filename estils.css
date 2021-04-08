@@ -4,9 +4,9 @@ body{
   font-weight: 20px;
 }
 
-div{
+li{
   height: 150px;
-  widht: 150px;
+  widht: 200px;
   background: lightblue;
   margin: 10px;
 }
