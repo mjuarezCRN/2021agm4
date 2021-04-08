@@ -1,3 +1,12 @@
 body{
   background-color: teal;
+  font-family: verdana;
+  font-weight: 20px;
+}
+
+div{
+  height: 150px;
+  widht: 200px;
+  background: lightblue;
+  margin: 10px;
 }
