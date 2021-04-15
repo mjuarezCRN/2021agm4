@@ -1,0 +1,333 @@
+body{
+  margin: 0 auto;
+  background-color: #FAD7A0;
+  animation: cielo 4s infinite
+}
+
+@keyframes cielo {
+  from {background-color:#FAD7A0;}
+  to {background-color: #283B5F}
+}
+
+#suelo{
+  width: 100%;
+  height: 50%;
+  background-color: #145A32;
+  position: absolute;
+  top:750px;
+}
+
+
+
+#fachada{
+  width: 250px;
+  height: 200px;
+  background-color: purple;
+  position: absolute;
+  left: 500px;
+  top: 550px;
+}
+
+#tejado{
+  width: 300px;
+  height: 100px;
+  background-color: #AF7AC5;
+  position: absolute;
+  left:470px;
+  top: 450px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+
+#puerta{
+  width: 50px;
+  height: 100px;
+  background-color: #4A235A;
+  position: relative;
+  left: 90px;
+  top: 100px;
+}
+
+
+.ventanas{
+  width: 50px;
+  height: 50px;
+  background-color:#D7BDE2;
+  float: left;
+  position: absolute;
+  top: 30px;
+  animation: luz linear 4s infinite;
+  animation-delay: 4s;
+}
+
+
+#ventana1{
+  left: 30px;
+}
+
+#ventana2{
+  left: 155px;
+}
+
+@keyframes luz {
+  from {box-shadow: 0px 0px 0px #F8F4BB}
+  to {box-shadow: 0px 0px 30px #FFF254}
+}
+
+#chimenea{
+  width: 60px;
+  height: 60px;
+  background-color: #AF7AC5;
+  top:470px;;
+  left:500px;
+  position: absolute;
+}
+
+.humito{
+  width:100px;
+  height:100px;
+  background-color: grey;
+  border-radius: 50%;
+  top:380px;
+  left:480px;
+  opacity: 70%;
+  position: relative;
+}
+
+.humito:after{
+  content:"";
+  border-radius: 50%;
+  width:100px;
+  height: 100px;
+  top:-30px;
+  left:40px;
+  background-color:grey;
+  position: absolute;
+}
+
+.humito:before{
+  content:"";
+  border-radius: 50%;
+  width:100px;
+  height: 100px;
+  top:-50px;
+  left:100px;
+  background-color: grey;
+  position: absolute;
+}
+
+#palo1{
+  background-color: #145A32;
+  height: 100px;
+  width: 20px;
+  position: absolute;
+  top: 660px;
+  left: 930px;
+}
+
+.petalos1{
+  clip-path: polygon(0% 15%, 33% 41%, 15% 0%, 85% 0%, 65% 40%, 100% 15%, 100% 85%, 67% 61%, 85% 100%, 15% 100%, 30% 63%, 0% 85%);
+  background-color: #B04CCE;
+  width: 100px;
+  height: 100px;
+  top:600px;
+  left: 892px;
+  position: absolute;
+  border-radius: 50%;
+  animation: florecita linear 3s infinite;
+}
+
+.petalos1:after{
+  content: "";
+  background-color: yellow;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  top: 35px;
+  left: 33px;
+}
+
+#palo2{
+  background-color: #145A32;
+  height: 100px;
+  width: 20px;
+  position: absolute;
+  top: 660px;
+  left: 1040px;
+}
+
+.petalos2{
+  clip-path: polygon(0% 15%, 33% 41%, 15% 0%, 85% 0%, 65% 40%, 100% 15%, 100% 85%, 67% 61%, 85% 100%, 15% 100%, 30% 63%, 0% 85%);
+  background-color: #B04CCE;
+  width: 100px;
+  height: 100px;
+  top:600px;
+  left: 1000px;
+  position: absolute;
+  border-radius: 50%;
+  animation: florecita linear 3s infinite;
+}
+
+.petalos2:after{
+  content: "";
+  background-color: yellow;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  top: 35px;
+  left: 33px;
+}
+
+@keyframes florecita {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg);}
+}
+
+.montana{
+  width: 300px;
+  height: 500px;
+  background-color: #1D8348;
+  position: absolute;
+  top:250px;
+}
+
+#montana1{
+  clip-path: polygon(26% 29%, 66% 0, 100% 100%, 0% 100%);
+}
+
+#montana2{
+  clip-path: polygon(28% 43%, 50% 20%, 100% 100%, 0% 100%);
+  left: 275px;
+}
+
+#montana3{
+  clip-path: polygon(34% 0, 76% 34%, 100% 100%, 0% 100%);
+  left:550px;
+}
+
+#montana4{
+  clip-path: polygon(37% 21%, 62% 0, 100% 100%, 0% 100%);
+  left: 800px;
+
+}
+
+.nube1{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 900px;
+  background-color: #FCEDD7;
+  animation: nube1 linear 4s infinite;
+  animation-delay: 1s;
+  opacity: 70%;
+}
+
+.nube1::after, .nube1::before{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #FCEDD7;
+  content: "";
+}
+
+.nube1:after{
+  top: 20px;
+  left: 80px;
+
+}
+
+.nube1:before{
+  width: 120px;
+  height: 120px;
+  top: 10px;
+  left: -50px;
+
+}
+
+.nube2{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: 200px;
+  left: 700px;
+  background-color: #FCEDD7;
+  animation: nube2 linear 4s infinite ;
+  animation-delay: 2s;
+  opacity: 70%;
+
+}
+
+.nube2::after, .nube2::before{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #FCEDD7;
+  content: "";
+}
+
+.nube2:after{
+  top: 20px;
+  left: 80px;
+
+}
+
+.nube2:before{
+
+  top: 10px;
+  left: -50px;
+
+}
+
+@keyframes nube1 {
+  from { left: 900px}
+  to { left: -300px}
+
+}
+
+@keyframes nube2 {
+  from { left: 700px}
+  to { left: -300px}
+}
+
+#sol{
+  width: 200px;
+  height:200px;
+  background-color: #F5B041;
+  position: absolute;
+  left: 750px;
+  top: 100px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 100px #F39C12;
+  animation: sol linear 4s infinite;
+}
+
+@keyframes sol {
+  from{ top: 100px}
+  to { top: 700px}
+
+}
+
+#luna{
+  width: 200px;
+  height:200px;
+  background-color: #F2F4CE;
+  position: absolute;
+  left: 200px;
+  top: 700px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 100px #ECF190;
+  animation: luna linear 4s infinite ;
+}
+
+@keyframes luna {
+  from{ top: 700px}
+  to { top: 150px}
+
+}
