@@ -1,12 +1,16 @@
 body{
   background-color: teal;
   font-family: verdana;
-  font-weight: 20px;
+  font-weight: 10px;
 }
+
 
 li{
   height: 150px;
-  width: 150px;
-  background: purple;
+  width:150px;
+  background: PaleTurquoise;
   margin: 10px;
+  font-size: 25px;
+  line-height: 150px;
+
 }
